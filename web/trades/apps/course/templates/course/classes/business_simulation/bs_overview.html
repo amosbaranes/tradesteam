@@ -1,0 +1,34 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+
+    <h1>{{ title }} <font size="5">(<a href="{% url 'course:business_simulation' %}" >Back</a>)</font></h1>
+    <p>
+        <h5>Overview</h5>
+    </p>
+            <h6>Learning Material</h6>
+            <ul>
+                <li>
+                    <!-- https://boutell.com/newfaq/creating/powerpointtoweb.html  -->
+                    <a href="{% static "course/business_simulation/images/overview_v1.pptx" %}" class="download">Introduction</a>
+                </li>
+                <li>
+                    <a href="#" >Student</a>
+                </li>
+                <li>
+                    <a href="#" >Coming Soon</a>
+                </li>
+            </ul>
+
+            <h6>Recommended Material</h6>
+            <ul>
+                <li>
+                    <a href="#" >Coming Soon</a>
+                </li>
+            </ul>
+
+
+</div>
+{% endblock %}

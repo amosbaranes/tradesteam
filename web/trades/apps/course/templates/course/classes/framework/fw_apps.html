@@ -1,0 +1,17 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }} <font size="5">(<a href="{% url 'course:framework' %}" >Back</a>)</font></h1>
+
+    <ul>
+        <li>
+            <h4>Title...:</h4>
+            <img src="{% static "framework/images/apps/directories.jpg" %}" width="400" height="250" />
+            <br/><br/>
+            <p>Paragraph </p>
+        </li>
+    </ul>
+</div>
+{% endblock %}

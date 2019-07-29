@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load course_tags %}
+{% load static %}
+
+{% block head %}
+  <link href="{% static "css/course.css" %}" rel="stylesheet">
+{% endblock head %}
+
+{% block title %}
+  <title>Course</title>
+{% endblock%}
+
+{% block body %}
+    {% block content_course %}
+    {% endblock %}
+{% endblock body%}

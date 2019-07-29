@@ -1,0 +1,40 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }} <font size="5">(<a href="{% url 'course:framework' %}" >Back</a>)</font></h1>
+
+    <ul>
+        <li>
+            <h4>How Celery works:</h4>
+            <img src="{% static "course/framework/images/asynchronous/celery.jpg" %}" width="400" height="250" />
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <a href="https://github.com/Bearle/django-private-chat" >django-private-chat</a>
+        </li>
+    </ul>
+
+    <h6>Recommended Material</h6>
+    <ul>
+        <font size="4" color="blue">
+        <li>
+            <a href="https://realpython.com/asynchronous-tasks-with-django-and-celery/"  target="_blank">Django & Celery</a>
+        </li>
+        <li>
+            <a href="https://subscription.packtpub.com/book/web_development/9781787286214/11/ch11lvl1sec77/using-celery-to-send-emails"
+             target="_blank">
+                Building Django 2.0 Web Applications: using celery to send emails</a>
+        </li>
+        <li>
+            <a href="https://subscription.packtpub.com/book/application_development/9781788472487/7/ch07lvl1sec52/launching-asynchronous-tasks-with-celery"
+             target="_blank">
+                Django 2 by Example: Launching asynchronous tasks with Celery (Building an Online Shop (Chapter 7)</a>
+        </li>
+        </font>
+    </ul>
+</div>
+{% endblock %}

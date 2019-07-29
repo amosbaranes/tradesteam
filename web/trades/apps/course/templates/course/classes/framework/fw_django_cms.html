@@ -1,0 +1,150 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }} <font size="5">(<a href="{% url 'course:framework' %}" >Back</a>)</font></h1>
+
+    <ul>
+        <li>
+            <h5>Setting Django CMS Project :</h5>
+            <p>
+                - Run the django-CMS installer: <font color="blue">pip install djangocms-installer</font>
+            </p>
+            <p>
+                - Go to your main directory and create a new directory for a new project (academycity).
+            </p>
+            <p>
+                - Go to the new directory and run the following command:
+                <font color="blue">djangocms -f -p . academycity</font><br/>
+                - (make sure to change the setting in requirements.txt of django to: Django==2.1.9)<br/>
+                - set setting directory with dev and prod settings.<br/>
+                - install django-bootstrao4: next section:<br/>
+            </p>
+        </li>
+
+        <li>
+            <a href="https://medium.com/@cleopatradouglas/building-django-cms-apphooks-5d4bdc44a906"_blank">
+                CMSApp</a>
+        </li>
+
+        <li>
+            <h4>Using Bbootstrap 4 with Django CMS:</h4>
+            <p>
+                - Follow the installation instructions in the following link:
+                <font color="blue"><a href="https://github.com/divio/djangocms-bootstrap4" target="_blank">
+                    Github: djangocms-bootstrap4</a></font>. Do <u>not</u> run python manage.py migrate.
+                NOTICE: there is an incompatibility issue.<br/>
+                In the project directory (academycity), Run the command:
+                <font color="blue">pip install -r requirements.txt</font>.
+                Open the file requirements.txt and change the line with psycopg2 to psycopg2==2.7.7
+                (see: <font color="blue"><a href="https://github.com/divio/django-cms/issues/6666)" target="_blank">
+                issues/6666)</a></font><br/>
+                Run the commend: <font color="blue">python manage.py migrate</font><br/>
+                Run the server with the command: <font color="blue">python manage.py runserver</font>
+                <br/>
+                - Learn Bootsratp (Excellent to embed it in Django-CMS):
+                <font color="blue"><a href="https://startbootstrap.com/" target="_blank">
+                    startbootstrap.com</a></font><br/>
+                - aldryn-newsblog
+                <font color="blue"><a href="https://aldryn-newsblog.readthedocs.io/en/latest/introduction.html" target="_blank">
+                    aldryn-newsblog</a></font>
+                - aldryn-forms:
+                <font color="blue"><a href="https://github.com/divio/aldryn-forms" target="_blank">
+                    github.com/divio/aldryn-forms</a></font>
+
+            </p>
+        </li>
+    </ul>
+
+
+    </br>
+    <h5>Related Material :</h5>
+    <ol>
+        <li>
+            <a href="http://support.divio.com/en/collections/69450-academy#guide-how-to-build-a-website-and-blog-with-django-cms"
+             target="_blank" >
+                Divio: guide-how-to-build-a-website-and-blog-with-django-cms</a>
+        </li>
+        <li>
+            <a href="https://www.diehlworks.com/en/blog/create-a-site-using-django-cms-in-less-than-15-minutes/" target="_blank">
+                Django-CMS in 15 minutes</a>
+        </li>
+        <li>
+            <a href="https://djangocms.readthedocs.io/en/2.2/extending_cms/extending_examples.html" target="_blank">
+                Extending Examples</a>
+        </li>
+        <li>
+            <a href="http://docs.django-cms.org/en/latest/" target="_blank">
+                Documentations for Django-CMS</a>
+        </li>
+    </ol>
+
+    </br>
+    <h5>Videos :</h5>
+    <ol>
+
+        <li>
+            <a href="https://www.youtube.com/results?search_query=+Martin+Koistinen" target="_blank">
+                Martin Koistinen</a>
+        </li>
+        <hr/>
+
+        <li>
+            <a href="https://www.youtube.com/watch?v=Dj8dhgmzlFM&t=6s" target="_blank">
+                Django CMS 3.0 App Integration</a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/watch?v=1ybHDaZFjus&t=154s" target="_blank">
+                cms plugins</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=HFcoSPqgbOE&t=617s" target="_blank">
+                django CMS: Content Creation - Wizards</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=CcADEc80Jps&t=616s" target="_blank">
+                I18N Apps + django CMS</a>
+        </li>
+
+        <li>
+            <a href="#" target="_blank">
+                coming</a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                coming</a>
+        </li>
+        <li>
+            <a href="https://youtu.be/ERiecriH0_g" target="_blank">
+                django CMS and Sitemaps</a>
+        </li>
+        <li>
+            <a href="https://youtu.be/GLzKrwSn1oU" target="_blank">
+                django CMS - Page Extensions</a>
+        </li>
+        <li>
+            <a href="https://youtu.be/_LBzqORyzDk" target="_blank">
+                Personalisation & Segmentation with django CMS</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=NbsRVfLCE1U" target="_blank">
+                Getting Started with django CMS</a>
+        </li>
+
+
+
+        <hr/>
+        <li>
+            <a href="https://www.youtube.com/watch?v=6jn_-WyRcaY" target="_blank">
+                Creating websites with django CMS - Paulo Alvarado</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=gqOEoUR5RHg" target="_blank">
+                Use Bootstrap</a>
+        </li>
+    </ol>
+
+</div>
+{% endblock %}

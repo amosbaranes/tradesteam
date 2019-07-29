@@ -1,0 +1,75 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }} <font size="5">(<a href="{% url 'course:framework' %}" >Back</a>)</font></h1>
+
+    <ul>
+        <li>
+            <h4>Machine Learning:</h4>
+            <img src="{% static "course/framework/images/machine_learning/machine_learning.png" %}" width="400" height="250" />
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <a href="https://www.youtube.com/watch?v=bC1mzhoabRE" >Tensorflow - Big Data Video 5</a>
+        </li>
+        <li>
+            <a href="https://www.psc.edu/hpc-workshop-series/big-data" >XSEDE HPC Workshop: BIG DATA</a>
+        </li>
+        <li>
+            <a href="#" >coming</a>
+        </li>
+        <li>
+            <a href="#" >coming</a>
+        </li>
+        <li>
+            <a href="#" >coming</a>
+        </li>
+    </ul>
+
+
+
+    <h6>Recommended Material</h6>
+    <ul>
+        <font size="4" color="blue">
+
+        <li>
+            Excelent:<br/>
+            <a href="https://medium.com/@mahdi04/train-predict-simple-machine-learning-models-with-django-rest-76ce46bf2868"
+               target="_blank">Train/predict simple machine learning model with Django REST</a><br/>
+            <a href="https://github.com/mahdi-ghelichi/DjangoRestML" target="_blank">DjangoRestML (github)</a>
+        </li>
+        <li>
+            Excelent:<br/>
+            <a href="https://github.com/jaehosung/tensorflow-mnist-tutorial" target="_blank">tensorflow-mnist-tutorial (github)</a>
+        </li>
+        <li>
+            <a href="https://medium.com/@skills_ai/django-for-data-scientists-tutorial-1-how-to-serve-a-machine-learning-model-with-django-464483423fd2" target="_blank">
+                Django for Data Scientists | Tutorial 1: How To Serve A Machine Learning Model with Django</a><br/>
+            <a href="https://github.com/skills-ai/classification_model" target="_blank">
+                classification_model (github)</a>
+        </li>
+        <li>
+            <a href="https://towardsdatascience.com/how-a-simple-mix-of-object-oriented-programming-can-sharpen-your-deep-learning-prototype-19893bd969bd" target="_blank">
+                How a simple mix of object-oriented programming can sharpen your deep learning prototype</a>
+        </li>
+        <li>
+            <a href="https://youtu.be/_iSCmkmz2i0" target="_blank">
+                Tensorflow Project #6: Django and Tensorflow Integration</a>
+        </li>
+
+        <li>
+
+            <a href="https://pythonprogramming.net/chatbot-deep-learning-python-tensorflow/" target="_blank">
+                Creating a Chatbot with Deep Learning, Python, and TensorFlow (all parts)</a><br/>
+            <a href="https://youtu.be/VYO6D8liqhY" target="_blank">Machine Learning Chatbot with Tensorflow</a>
+        </li>
+
+
+        </font>
+    </ul>
+</div>
+{% endblock %}

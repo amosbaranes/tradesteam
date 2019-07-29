@@ -1,0 +1,27 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }} <font size="5">(<a href="{% url 'course:framework' %}" >Back</a>)</font></h1>
+
+    <ul>
+        <li>
+            <p style="background-color: black; color: white">Tables are the fundamental block of relational database.
+            </p>
+            <h4>Tables:</h4>
+            <img src="{% static "course/framework/images/database/karam.jpg" %}" width="800" height="450" />
+            <br/><br/>
+            <p>In each table we have columns (fields) and rows (records) ... </p>
+        </li>
+        <br/>
+        <li>
+            <h4>Create directories under the C:\ drive as follow:</h4>
+            <img src="{% static "course/framework/images/database/karam.jpg" %}" width="400" height="250" />
+            <br/><br/>
+            <p>Make sure in the following installations to install every programe in the right directory </p>
+        </li>
+
+    </ul>
+</div>
+{% endblock %}

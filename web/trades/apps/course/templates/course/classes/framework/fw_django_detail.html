@@ -1,0 +1,27 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }} <font size="5">(<a href="{% url 'course:framework' %}" >Back</a>)</font></h1>
+
+    <ul>
+        <li>
+            <h4>Using Bbootstrap 4 with Django CMS:</h4>
+                - Debug Tool:
+                <font color="blue"><a href="https://www.youtube.com/playlist?list=PLLRM7ROnmA9FgFlqn-HHBz0LJ62qJBwSw"
+                                      target="_blank">.<br/>
+        </li>
+
+        <li>
+            <h4>Title...:</h4>
+            <img src="{% static "course/framework/images/django_detail/directories.jpg" %}" width="400" height="250" />
+            <br/><br/>
+            <p>Paragraph </p>
+        </li>
+    </ul>
+
+
+
+</div>
+{% endblock %}

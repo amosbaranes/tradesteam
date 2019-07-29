@@ -1,0 +1,55 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }}</h1>
+    <p>
+        <h5><a href="{% static "course/machine_learning/syllabus_v1.pdf" %}" >Syllabus</a></h5>
+    </p>
+            <h6>Learning Material</h6>
+            <ul>
+                <li>
+                    <a href="#" >Overview</a>
+                </li>
+                <li>
+                    <a href="https://github.com/math-a3k/django-ai" target="_blank">Django-AI (GitHub)</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Coming Soon</a>
+                </li>
+            </ul>
+
+            <h6>Recommended Material</h6>
+            <ul>
+                <li>
+                    <a href="{% static "course/machine_learning/images/Artificial Intelligence By Example.pdf" %}"
+                    target="_blank">Artificial Intelligence By Example<br/>
+                        (Develop machine intelligence from scratch using real artificial intelligence use cases)</a>
+                </li>
+                <li>
+                    <a href="{% static "course/machine_learning/images/Artificial Intelligence with Python.pdf" %}"
+                    target="_blank">Artificial Intelligence with Python</a>
+                </li>
+                <li>
+                    <a href="{% static "course/machine_learning/images/artificial_intelligence_with_python_tutorial.pdf" %}"
+                    target="_blank">artificial intelligence with python (Tutorial)</a>
+                </li>
+                <li>
+                    <a href="{% static "course/machine_learning/images/Python Artificial Intelligence Projects for Beginners.pdf" %}"
+                    target="_blank">Python Artiﬁcial Intelligence Projects for Beginners<br/>
+                    (8 smart and exciting AI applications)</a>
+                </li>
+                <li>
+                    <a href="{% static "course/machine_learning/images/Python code for Artificial Intelligence Foundations of Computational Agents.pdf" %}"
+                    target="_blank">Python code for Artificial Intelligence Foundations of Computational Agents</a>
+                </li>
+
+                <li>
+                    <a href="#" target="_blank">Coming Soon</a>
+                </li>
+            </ul>
+
+
+</div>
+{% endblock %}

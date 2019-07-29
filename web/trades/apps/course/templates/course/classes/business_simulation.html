@@ -1,0 +1,32 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }}</h1>
+    <p>
+        <h5><a href="{% static "business_simulation/syllabus_v1.pdf" %}" >Syllabus</a></h5>
+    </p>
+            <h6>Learning Material</h6>
+            <ul>
+                <li>
+                    <a href="{% url 'course:bs_overview' %}" >Overview</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:bs_registration' %}" >Registration</a>
+                </li>
+                <li>
+                    <a href="#" >Coming Soon</a>
+                </li>
+            </ul>
+
+            <h6>Recommended Material</h6>
+            <ul>
+                <li>
+                    <a href="#" >Coming Soon</a>
+                </li>
+            </ul>
+
+
+</div>
+{% endblock %}

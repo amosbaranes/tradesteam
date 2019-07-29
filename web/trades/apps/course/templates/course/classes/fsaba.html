@@ -1,0 +1,48 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }}</h1>
+    <p>
+        <h5><a href="{% static "fsa/syllabus.pdf" %}" >Syllabus</a></h5>
+    </p>
+
+            <h6>Learning Material</h6>
+            <ul>
+                <li>
+                    <a href="{% static "fsa/requirements.docx" %}" c>Requirements</a>
+                </li>
+                <li>
+                    <a href="{% static "fsa/presentation_1.pptx" %}" c>Presentation 1</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="{% static "fsa/presentation_2.pptx" %}" c>Presentation 2</a>
+                </li>
+                <li>
+                    <a href="{% static "fsa/MandA_101.xlsx" %}" c>Merger &amp; Acquisitions 101</a>
+                </li>
+                <li>
+                    <a href="{% static "fsa/goodwill_101.doc" %}" c>Explanation of Goodwill</a>
+                </li>
+            </ul>
+
+            <h6>Recommended Material</h6>
+            <ul>
+                <li>
+                    <a href="{% static "fsa/IntroductoryGeneralLedger_TrialBalance_FS.xlsx" %}" c>From General Ledger &gt;&gt; TrialBalance  &gt;&gt; Financial Statements   </a>
+                </li>
+                <li>
+                    <a href="{% static "fsa/ExampleRatioAnalysisTeva.xlsx" %}" c>ExampleRatioAnalysisTeva.xlsx (for part 2 of the papaer)</a>
+                </li>
+                <li>
+                    <a href="{% static "fsa/ExampleOfStatementCashFlow.xlsx" %}" c>ExampleOfStatementCashFlow.xlsx</a>
+                </li>
+            </ul>
+
+
+</div>
+{% endblock %}

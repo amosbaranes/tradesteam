@@ -1,0 +1,116 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+
+    <h1>{{ title }}</h1>
+    <p>
+    <h5><a href="{% static "framework/syllabus_v1.pdf" %}" ><font color="blue">Syllabus</a></font></h5>
+    </p>
+            <h5>Learning Material</h5>
+            <ul>
+                <font size="4" color="blue">
+                <li>
+                    <a href="{% url 'course:fw_installation' %}" >Installation</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:fw_django_allauth' %}" >Django_AllAuth: Authentication</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:fw_python_django' %}" >introduction to Python / Django framework</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:fw_database' %}" >Introduction to Database</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:fw_django_detail' %}" >The Django framework - details</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:fw_apps' %}" >Design an application</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:fw_team_work' %}" >implement the application with your team</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:fw_django_cms' %}" >Django CMS</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:fw_asynchronous' %}" >Asynchronous for Django</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:fw_internationalization' %}" >Internationalization</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:fw_business_intelligence' %}" >Business Intelligence with Django</a>
+                </li>
+                <li>
+                    <a href="{% url 'course:fw_machine_learning' %}" >Machine Learning with Django</a>
+                </li>
+
+                </font>
+            </ul>
+
+
+            <h5>Must Know (ToDo)</h5>
+            <ul>
+                <u size="4" color="blue">
+                <li>
+                    <a href="https://github.com/bogdal/djangocms-example" target="_blank">djangocms-example</a>
+                </li>
+            </ul>
+
+            <h5>Advanced Topics</h5>
+            <ul>
+                <font size="4" color="blue">
+                <li>
+                    <a href="{% url 'course:fw_asynchronous' %}" >Asynchronous for Django</a>
+                </li>
+                <li>
+                    <a href="https://subscription.packtpub.com/book/application_development/9781788472487/9/ch09lvl1sec60/adding-internationalization-and-localization" >
+                        Internationalization (Django 2 by Example: chapter 9)</a>
+                </li>
+                <li>
+                    <a href="https://djangopackages.org/grids/g/reporting/" >
+                        Reporting</a>
+                </li>
+                <li>
+                    <a href="#" >
+                        </a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@hmlon/django-authentication-via-google-deezer-and-spotify-bb7c329357be" >
+                        Django authentication via Google, Deezer, and Spotify</a>
+                </li>
+
+
+                </font>
+            </ul>
+
+            <h6>Recommended Material</h6>
+            <ul>
+                <font size="4" color="blue">
+                <li>
+                    <a href="https://django-book.readthedocs.io/en/latest/introduction.html" >Django book (readthedocs)</a>
+                </li>
+                <li>
+                    <a href="#" >Coming Soon</a>
+                </li>
+                </font>
+            </ul>
+
+            <h6>Recommended Video</h6>
+            <ul>
+                <font size="4" color="blue">
+                <li>
+                    <a href="https://youtu.be/BRCx6lSA0fM" >
+                        DjangoCon US 2017 - Butter smooth, interactive applications with Django
+                    </a>
+                </li>
+                </font>
+            </ul>
+
+
+
+</div>
+{% endblock %}

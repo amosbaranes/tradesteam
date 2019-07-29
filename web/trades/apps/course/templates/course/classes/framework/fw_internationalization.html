@@ -1,0 +1,53 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }} <font size="5">(<a href="{% url 'course:framework' %}" >Back</a>)</font></h1>
+
+    <ul>
+        <li>
+            <h4>Internationalization for Django:</h4>
+            <img src="{% static "course/framework/images/internationalization/internationalization.jpg" %}" width="500" height="250" />
+        </li>
+    </ul>
+
+    <ul>
+        <font size="4" color="blue">
+        <li>
+            <a href="http://www.marinamele.com/taskbuster-django-tutorial/internationalization-localization-languages-time-zones"
+               target="_blank">Internationalization and Localization. Languages and Time zones</a>
+        </li>
+        <li>
+            <a href="#" target="_blank">coming</a>
+        </li>
+        <li>
+            <a href="#" target="_blank">coming</a>
+        </li>
+        <li>
+            <a href="#" target="_blank">coming</a>
+        </li>
+        </font>
+    </ul>
+
+
+
+    <h6>Recommended Material</h6>
+    <ul>
+        <font size="4" color="blue">
+
+        <li>
+            Excellent:<br/>
+            <a href="#"  target="_blank">Coming</a><br/>
+        </li>
+
+
+        </font>
+    </ul>
+
+
+
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }}</h1>
+    <p>
+        <h5><a href="{% static "course/business_intelligence/syllabus_v1.pdf" %}" >Syllabus</a></h5>
+    </p>
+            <h6>Learning Material</h6>
+            <ul>
+                <li>
+                    <a href="#" >Overview</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Coming Soon</a>
+                </li>
+            </ul>
+
+            <h6>Recommended Material</h6>
+            <ul>
+                <li>
+                    <a href="#" target="_blank">Coming Soon</a>
+                </li>
+            </ul>
+
+
+</div>
+{% endblock %}

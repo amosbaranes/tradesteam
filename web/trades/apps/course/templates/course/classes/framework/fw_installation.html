@@ -1,0 +1,218 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }} <font size="5">(<a href="{% url 'course:framework' %}" >Back</a>)</font></h1>
+
+    <ul>
+        <li>
+            <h4>Create directories under the C:\ drive as follow:</h4>
+            <img src="{% static "course/framework/images/installations/directories.jpg" %}" width="400" height="250" />
+            <br/><br/>
+            <p>Make sure in the following installations to install every programe in the right directory </p>
+        </li>
+        <li>
+            <p style="background-color: black; color: white">Database contain the data of the project. Postgres is an excellent database and
+                pgAdmin is an application that allows us to manage the creating of databases.
+            </p>
+            <h4>
+                Download: <font color="blue"><a href=https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" >Postgres &amp; pgAdmin</a></font>
+            </h4>
+            <p>
+                - Run the installation by double click on the file you downloaded.<br/>
+                - When you get to the following screen, make sure to follow the following selections.<br/>
+                - Make sure to remove the check mark from the stack builder. Click next</p>
+            <img src="{% static "course/framework/images/installations/postgres1.jpg" %}" width="400" height="300" />
+            <br/><br/>
+            <p>follow the instructions until you get to the following screens.</p>
+            <p>Choose your password, we recommend you to choose: sql1pass</p>
+            <img src="{% static "course/framework/images/installations/postgres2.jpg" %}" width="400" height="300" />
+            <br/><br/>
+            <br/><br/>
+            <p>Choose the language: English United States</p>
+            <img src="{% static "course/framework/images/installations/postgres3.jpg" %}" width="400" height="300" />
+            <br/><br/>
+            <p>click next and follow the instructions.</p>
+            <h4>
+                Create database
+            </h4>
+            <br/><br/>
+            <p>
+                - Open the pgAdmin.  This tool allows you to create database, add users etc ...<br/></p>
+            <p>In case and it does not created a shortcut on the desktop, go to the file (according to the picture and open it there):</p>
+            <img src="{% static "course/framework/images/installations/pgadmin1.jpg" %}" width="400" height="300" />
+            <br/><br/>
+            It will open you browser to connect to the data base, you should get this page:
+            <img src="{% static "course/framework/images/installations/pgadmin2.jpg" %}" width="400" height="300" />
+            <p>In case you requiered to put a password, so you should use the same password that you have choosed during the installation. The password is: sql1pass.
+            </p>
+            <p>After you connect you need to choose the service and do the steps according to the picture to open you first data base</p>
+            <img src="{% static "course/framework/images/installations/pgadmin3.jpg" %}" width="400" height="300" />
+            <p>
+                - Create database by the name: <font size="3" color="blue">trades</font><br/>
+                - Create user by the name: <font size="3" color="blue">trades</font> and password: <font size="3" color="blue">sql1pass</font><br/>
+            </p>
+        </li>
+        <br/>
+        <li>
+            <p style="background-color: black; color: white">Python is the most popular programing language.
+            </p>
+            <h4>
+                Download: <font color="blue"><a href="https://www.python.org/ftp/python/3.7.3/python-3.7.3-amd64.exe" >
+                Download Python (64 bit)</a></a></font>
+            </h4>
+            <p>
+                - Run the installation by double click on the file you downloaded.<br/>
+                - when you get to the following screen, make sure to follow the following selection (Please be sure to make a V for Add Python to Path)
+                and click Customize installation.<br/>
+                - Diirectory, choose to install it to: C:/envs/Python.</p>
+            <img src="{% static "course/framework/images/installations/python1.jpg" %}" width="400" height="300" />
+            <br/><br/>
+            <p>- Follow the instructions.</p>
+        </li>
+        <br/>
+        <li>
+            <p style="background-color: black; color: white">PyCharm is an application/Editor for a programing language.
+                We will use it to program in Python.
+            </p>
+            <h4>
+                Download: <font color="blue">
+                <a href="https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC" >
+                PyCharm Community Edition</a></font>
+            </h4>
+            <p>
+                - Run the installation by double click on the file you downloaded.<br/>
+                - Follow the instruction.<br/>
+            <img src="{% static "course/framework/images/installations/pycharm1.jpg" %}" width="400" height="300" /><br/>
+                - In the installation options window:<br/>
+            <img src="{% static "course/framework/images/installations/pycharm3.jpg" %}" width="400" height="300" /><br/>
+                - Check the 64-bit launcher, and we recommend checking also the PATH.</p>
+        </li>
+        <br/>
+        <li>
+            <p style="background-color: black; color: white">Git is a program that allows you to download code from
+                a repository Github (and others).
+            </p>
+            <h4>
+                Download: <font color="blue">
+                <a href="https://github.com/git-for-windows/git/releases/download/v2.22.0.windows.1/Git-2.22.0-64-bit.exe" >
+                Download github</a></font>
+            </h4>
+            <p>
+                - Run the installation by double click on the file you downloaded.<br/>
+                - When you get to the following screen, make sure to select the following selection:</p>
+            <img src="{% static "course/framework/images/installations/github1.jpg" %}" width="400" height="400" /><br/><br/>
+            <p>
+                - After the installation, you should get the following screen:</p>
+            <img src="{% static "course/framework/images/installations/github2.jpg" %}" width="400" height="300" /><br/><br/>
+        </li>
+        <li>
+            <p style="background-color: black; color: white">Now we have all the tools to create a project.
+                But, I already created for you a working framework to build application and upload it to the internet.
+                So, let's start.
+            </p>
+            <h4>Create a PyCharm project: <font color="blue">trades</font></h4>
+            <p>- Open the PyCharm and create a new project by the name: <font color="blue">trades</font></p>
+            <img src="{% static "course/framework/images/installations/pycharm_project1.jpg" %}" width="400" height="300" />
+            <br/><br/>
+            <p>Make sure to enter data according to the following screen, to setup the project and the environment.</p>
+            <img src="{% static "course/framework/images/installations/pycharm_project2.jpg" %}" width="600" height="400" />
+            <br/><br/>
+            <p> - Click create.<br/>
+                - Exit the PyCharm.<br/>
+                - Rename the project directory from trades to <u>trades1</u>.</p>
+
+            <h4>Install the trades project from github</h4>
+            <p>
+                - Open git.<br/>
+                - change directory to c:\enves\projects by the following command: <font size="3" color="blue">
+                cd /c/envs/projects </font><br/>
+                - Enter the following commend: <font size="3" color="blue">git clone https://github.com/amosbaranes/trades.git</font><br/>
+                - Copy the directory .idea from the directory <u>trades1</u> to the directory trades.<br/>
+                - Delete the directory <u>trades1</u><br/>
+                - Open the project trades in PyCharm. open the terminal and cd to wed: <font size="3" color="blue">cd web</font><br/>
+                - Run the following command in the terminal: <font size="3" color="blue">
+                pip install -r requirements.txt</font> (see the screen:).
+            </p>
+            <img src="{% static "course/framework/images/installations/pycharm_project3.jpg" %}" width="600" height="450" /><br/><br/>
+            <p>
+                - Run the following commands in the terminal:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">python manage.py migrate</font><br/>
+                - After the creation of the tables in the database is done, run the next command:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">python manage.py createsuperuser</font><br/>
+                - When prompted enter the following information:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;User: <font size="3" color="blue">admin</font><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;email: <font size="3" color="blue">your@email.com</font><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;password: <font size="3" color="blue">sql1pass</font><br/>
+
+                - To run the server enter the following command:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">python manage.py runserver</font><br/>
+                - Click the link  <font size="3" color="blue"><u>127.0.0.1:8000</u>. You should see the following screen:</font><br/><br/>
+            <img src="{% static "course/framework/images/installations/pycharm_project4.jpg" %}" width="800" height="350" />
+            </p>
+        </li><br/>
+        <li>
+            <p style="background-color: black; color: white">Now we have a working project.
+                During the course, we will learn all the components that compose it.  The next stage is to upload it to the internet.
+                Before we upload it to the internet, we test it on a similar server as the one on Amazon (or any host server).
+                For that we need the Docker.
+            </p>
+            <h4>
+                Download: <font color="blue"><a href="https://github.com/docker/toolbox/releases/download/v18.09.3/DockerToolbox-18.09.3.exe" >DockerToolbox for windows</a></font>
+            </h4>
+            <p>Run the installation by double click on the file you downloaded. follow the instruction.
+                when you get to the following screen, make sure to follow the following selections.
+                make sure to remove the check mark from the github. Click next</p>
+            <img src="{% static "course/framework/images/installations/docker1.jpg" %}" width="400" height="300" />
+            <br/><br/>
+            <p>The following screen show the loacation of the installed DockerToolbox.</p>
+            <img src="{% static "course/framework/images/installations/docker2.jpg" %}" width="500" height="250" />
+            <br/><br/>
+            <h4>Create a virtual machine and upload the project</h4>
+            1 - Open docker and create virtual machine called <font color="blue">trades:</font><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">docker-machine create -d virtualbox trades</font><br/>
+            2 - Make the virtual machine active<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">eval $(docker-machine env trades)</font><br/>
+            3 - View the virtual machines on your computer and notice the * next to the trades machine<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">docker-machine ls</font><br/>
+            4 - On docker you should be in the web folder. issue the command:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">cd /c/envs/projects/trades</font><br/>
+            5 - On docker issue the following command to create the services:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">docker-compose build</font><br/>
+            6 - Upload the services in the virtual machine (VM):<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">docker-compose up -d</font><br/>
+            7 - Run migrate on the MV to create the database:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">docker-compose run --rm web //usr/local/bin/python manage.py migrate</font><br/>
+            8 - Run collect static files<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">docker-compose run --rm web //usr/local/bin/python manage.py collectstatic --no-input</font><br/>
+            9 - Create super user:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">winpty docker-compose run -- rm web //usr/local/bin/python manage.py createsuperuser</font><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;When prompted, enter the following:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;User: <font size="3" color="blue">admin</font><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;email: <font size="3" color="blue">admin@gmail.com</font><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;Password: <font size="3" color="blue">sql1pass</font><br/>
+            10 - Find the IP of your VM:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font size="3" color="blue">docker-machine ls</font><br/>
+            11 - open the browser and type the IP address of your VM with port 8080<br/>
+            12 - Register yourself as student:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;On main page click <font size="3" color="blue">register</font><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;Enter the information (follow the password instructions) and click submit.<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;Remember your user and password (write it somewhere)<br/>
+            13 - Log in:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;From the main page login with your user and password<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;Edit your profile. On the sidebar, click <font size="3" color="blue">Portfolio</font> then click
+                <font size="3" color="blue">Edit Use Profile</font><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;In filling the information, make sure:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- That your website will be entered in the following format: http://jerusalemcollege.org<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Set Type to Student<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Upload your picture<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Submit your information<br/>
+
+            <br/><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="10" color="blue">Good Luck !!!</font><br/>
+
+        </li>
+    </ul>
+</div>
+{% endblock %}

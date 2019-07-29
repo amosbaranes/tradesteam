@@ -1,0 +1,71 @@
+{% extends 'course/base_course.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>{{ title }} <font size="5">(<a href="{% url 'course:framework' %}" >Back</a>)</font></h1>
+
+    <h4>Business Intelligence:</h4>
+    <table>
+        <tr>
+            <td>
+                <img src="{% static "course/framework/images/business_intelligence/business_intelligence.png" %}" width="350" height="300" /><br/>
+            </td>
+            <td>
+                <img src="{% static "course/framework/images/business_intelligence/business_intelligence1.png" %}" width="350" height="300" /><br/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="{% static "course/framework/images/business_intelligence/business_intelligence2.png" %}" width="350" height="350" /><br/>
+            </td>
+            <td>
+                <img src="{% static "course/framework/images/business_intelligence/business_intelligence3.png" %}" width="350" height="350" /><br/>
+            </td>
+        </tr>
+        <tr>
+            <td style="align:center" >
+                <img src="{% static "course/framework/images/business_intelligence/BI.jpg" %}" width="350" height="350" /><br/>
+            </td>
+            <td style="align:center" >
+                <img src="{% static "course/framework/images/business_intelligence/business_intelligence5.jpg" %}" width="350" height="350" /><br/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="{% static "course/framework/images/business_intelligence/business_intelligence6.png" %}" width="350" height="350" /><br/>
+            </td>
+            <td>
+                <img src="{% static "course/framework/images/business_intelligence/business_intelligence7.png" %}" width="350" height="350" /><br/>
+            </td>
+        </tr>
+    </table>
+
+    <ul>
+        <li>
+            <a href="#" >coming soon</a>
+        </li>
+    </ul>
+
+    <h6>Recommended Material</h6>
+    <ul>
+        <font size="4" color="blue">
+
+        <li>
+            <a href="https://github.com/grantmcconnaughey/django-chartit2" target="_blank">
+                A Django app to plot charts and pivot charts directly from the models. Uses HighCharts and jQuery
+                JavaScript libraries to render the charts on the webpage</a>
+        </li>
+        <li>
+            <a href="https://pythonhosted.org/cubes/" target="_blank">
+                Python OLAP Framework</a>
+        </li>
+        <li>
+            <a href="#" target="_blank">
+                </a>
+        </li>
+
+        </font>
+    </ul>
+</div>
+{% endblock %}
